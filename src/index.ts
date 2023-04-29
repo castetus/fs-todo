@@ -1,13 +1,13 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
-import test from '@test/test';
-
-console.log(test);
+import taskRouter from '@routes/tasks';
 
 const app = express();
 
 app.use(bodyParser.json());
+
+app.use('/', taskRouter);
 
 // mongoose.connect('mongodb://localhost/myapp', { useNewUrlParser: true });
 

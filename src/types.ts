@@ -19,3 +19,8 @@ export interface IList {
   estimate?: string,
   tasks: ITask[],
 };
+
+export interface IResponse {
+  err_code: number,
+  text: string,
+};
