@@ -3,7 +3,8 @@
     "baseUrl": "./src",
     "paths": {
       "@routes/*": ["routes/*"],
-      "@controllers/*": ["controllers/*"]
+      "@controllers/*": ["controllers/*"],
+      "@models/*": ["models/*"]
     },
     "target": "es5",
     "module": "commonjs",

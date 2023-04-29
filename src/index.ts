@@ -1,7 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-import mongoose from 'mongoose';
-import taskRouter from '@routes/tasks';
+import db from './db';
+import taskRouter from '@routes/tasks.routes';
 
 const app = express();
 
@@ -16,8 +16,6 @@ app.use('/', taskRouter);
 // router.get('/hello', (req, res) => {
 //   res.send('Hello, world!');
 // });
-
-// app.use('/api', router);
 
 app.listen(3000, () => {
   console.log('Server listening on port 3000');

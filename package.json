@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start:db": "docker run --rm -d -p 27017:27017 -v ~/data:/data/db --name mongodb mongo",
     "start": "nodemon ./src/index.ts"
   },
   "keywords": [],

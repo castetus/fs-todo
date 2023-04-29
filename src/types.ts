@@ -5,19 +5,21 @@ export interface IUser {
 
 export interface ITask {
   id: number,
+  listId: number,
   name: string,
   description?: string,
-  date: number,
+  createdAt: number,
   created: IUser,
-  done: boolean,
+  completed: boolean,
+  estimate?: string,
 };
 
 export interface IList {
   id: number,
   name: string,
-  date: number,
-  estimate?: string,
-  tasks: ITask[],
+  createdAt: Date | number,
+  estimate?: Date | number,
+  completed: boolean,
 };
 
 export interface IResponse {
